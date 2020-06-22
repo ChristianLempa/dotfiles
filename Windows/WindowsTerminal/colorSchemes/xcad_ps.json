@@ -1,0 +1,21 @@
+{
+	"name" : "xcad_ps",
+	"background" : "#0f2022",
+	"black" : "#000000",
+	"blue" : "#56B6C2",
+	"brightBlack" : "#5A6374",
+	"brightBlue" : "#56B6C2",
+	"brightCyan" : "#56B6C2",
+	"brightGreen" : "#56e1f3",
+	"brightPurple" : "#C678DD",
+	"brightRed" : "#E06C75",
+	"brightWhite" : "#e2e2e2",
+	"brightYellow" : "#56B6C2",
+	"cyan" : "#56B6C2",
+	"foreground" : "#e2e2e2",
+	"green" : "#56e1f3",
+	"purple" : "#C678DD",
+	"red" : "#E06C75",
+	"white" : "#e2e2e2",
+	"yellow" : "#56e1f3"
+}

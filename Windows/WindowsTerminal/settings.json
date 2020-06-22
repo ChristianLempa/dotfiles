@@ -1,0 +1,107 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+
+    "profiles":
+    {
+    "defaults":
+    {
+	 "useAcrylic": true,
+	 "acrylicOpacity": 0.7,
+     "fontFace": "Anonymice Nerd Font",
+     "fontSize": 18,
+     "colorScheme": "xcad",
+     "padding":"4, 4, 4, 4"
+    },
+    "list":
+    [
+        {
+            "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+            "hidden": false,
+            "name": "Ubuntu-20.04",
+            "startingDirectory" : "//wsl$/Ubuntu-20.04/home/xcad",
+            "source": "Windows.Terminal.Wsl",
+            "icon": "ms-appdata:///roaming/code.png",
+            "closeOnExit": "graceful",
+            "snapOnInput": true,
+            "colorScheme": "xcad"
+        },
+        {
+            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+            "name": "Windows PowerShell",
+            "commandline": "powershell.exe",
+            "hidden": false,
+            "colorScheme": "xcad_ps"
+        },
+        {
+            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "name": "cmd",
+            "commandline": "cmd.exe",
+            "hidden": false,
+            "colorScheme": "xcad_ps"
+        },
+        {
+            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+            "hidden": false,
+            "name": "Azure Cloud Shell",
+            "source": "Windows.Terminal.Azure",
+            "colorScheme": "xcad_ps"
+        }
+    ]
+    },
+
+    // Add custom color schemes to this array
+    "schemes": [
+        {
+            "name" : "xcad",
+            "background" : "#000000",
+            "black" : "#000000",
+            "blue" : "#6b6b6b",
+            "brightBlack" : "#5A6374",
+            "brightBlue" : "#9c9c9c",
+            "brightCyan" : "#56B6C2",
+            "brightGreen" : "#56e1f3",
+            "brightPurple" : "#C678DD",
+            "brightRed" : "#E06C75",
+            "brightWhite" : "#e2e2e2",
+            "brightYellow" : "#333333",
+            "cyan" : "#56B6C2",
+            "foreground" : "#e2e2e2",
+            "green" : "#56e1f3",
+            "purple" : "#C678DD",
+            "red" : "#E06C75",
+            "white" : "#e2e2e2",
+            "yellow" : "#56e1f3"
+        },
+        {
+            "name" : "xcad_ps",
+            "background" : "#0f2022",
+            "black" : "#000000",
+            "blue" : "#56B6C2",
+            "brightBlack" : "#5A6374",
+            "brightBlue" : "#56B6C2",
+            "brightCyan" : "#56B6C2",
+            "brightGreen" : "#56e1f3",
+            "brightPurple" : "#C678DD",
+            "brightRed" : "#E06C75",
+            "brightWhite" : "#e2e2e2",
+            "brightYellow" : "#56B6C2",
+            "cyan" : "#56B6C2",
+            "foreground" : "#e2e2e2",
+            "green" : "#56e1f3",
+            "purple" : "#C678DD",
+            "red" : "#E06C75",
+            "white" : "#e2e2e2",
+            "yellow" : "#56e1f3"
+        }
+    ],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": []
+}
