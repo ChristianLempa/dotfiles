@@ -1,107 +1,157 @@
+/*
+Windows Terminal Settings JSON File
+---
 
-// To view the default settings, hold "alt" while clicking on the "Settings" button.
-// For documentation on these settings, see: https://aka.ms/terminal-documentation
+Feel free to use and modify any of my settings ;)
+
+*/
 
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
     "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
 
-    "profiles":
+    "keybindings": [],
+
+    /* 
+    Profile Section
+    ---
+
+    */
+    "profiles": 
     {
-    "defaults":
-    {
-	 "useAcrylic": true,
-	 "acrylicOpacity": 0.7,
-     "fontFace": "Anonymice Nerd Font",
-     "fontSize": 18,
-     "colorScheme": "xcad",
-     "padding":"4, 4, 4, 4"
+        "defaults": 
+        {
+            // Background Settings
+            "acrylicOpacity": 0.7,
+            "useAcrylic": false,
+            "background": "#090909",
+
+            // Default Color Scheme
+            "colorScheme": "xcad_vscode",
+
+            // Font Settings
+            "fontFace": "FiraCode Nerd Font Retina",
+            "fontSize": 14,
+
+            // Reduce Default Padding
+            "padding": "2, 2, 2, 2",
+
+            // Turn on/off Retro effect
+            "experimental.retroTerminalEffect": false,
+            
+            // Hide Scrollbars
+            "scrollbarState": "hidden"
+        },
+
+        "list": 
+        [
+            {
+                /*  
+                Ubuntu Profile
+                ---
+
+                */
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "icon": "%userprofile%\\WindowsTerminalIcons\\ubuntu.png",
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "//wsl$/Ubuntu-20.04/home/xcad"
+            },
+                /*  
+                PowerShell Profile
+                ---
+
+                */
+            {
+                "commandline": "powershell.exe",
+                "colorScheme": "xcad_vscode",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "icon": "%userprofile%\\WindowsTerminalIcons\\ps.png",
+                "name": "PowerShell"
+            },
+            {
+                /*  
+                Legacy Commandline Profile
+                ---
+
+                */
+                "colorScheme": "xcad_vscode",
+                "commandline": "cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "icon": "%userprofile%\\WindowsTerminalIcons\\cmd.png",
+                "name": "Commandline"
+            },
+            {
+                /*  
+                Azure Cloud Shell Profile
+                ---
+
+                */
+                "colorScheme": "xcad_vscode",
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "icon": "%userprofile%\\WindowsTerminalIcons\\azure.png",
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                /*  
+                Kali Linux Profile
+                ---
+
+                */
+                "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+                "hidden": false,
+                "icon": "%userprofile%\\WindowsTerminalIcons\\kali.png",
+                "name": "Kali WSL",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "//wsl$/kali-linux/home/xcad"
+            }
+        ]
     },
-    "list":
+
+
+    /*
+    Color Scheme Section
+    ---
+
+    */
+    "schemes": 
     [
         {
-            "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-            "hidden": false,
-            "name": "Ubuntu-20.04",
-            "startingDirectory" : "//wsl$/Ubuntu-20.04/home/xcad",
-            "source": "Windows.Terminal.Wsl",
-            "icon": "ms-appdata:///roaming/code.png",
-            "closeOnExit": "graceful",
-            "snapOnInput": true,
-            "colorScheme": "xcad"
-        },
-        {
-            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-            "name": "Windows PowerShell",
-            "commandline": "powershell.exe",
-            "hidden": false,
-            "colorScheme": "xcad_ps"
-        },
-        {
-            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-            "name": "cmd",
-            "commandline": "cmd.exe",
-            "hidden": false,
-            "colorScheme": "xcad_ps"
-        },
-        {
-            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-            "hidden": false,
-            "name": "Azure Cloud Shell",
-            "source": "Windows.Terminal.Azure",
-            "colorScheme": "xcad_ps"
-        }
-    ]
-    },
+            /* 
+            THEME: xcad vscode
+            ---
+            This is my default color scheme, looks similar to the
+            default terminal colors in VSCode
 
-    // Add custom color schemes to this array
-    "schemes": [
-        {
-            "name" : "xcad",
-            "background" : "#000000",
-            "black" : "#000000",
-            "blue" : "#6b6b6b",
-            "brightBlack" : "#5A6374",
-            "brightBlue" : "#9c9c9c",
-            "brightCyan" : "#56B6C2",
-            "brightGreen" : "#56e1f3",
-            "brightPurple" : "#C678DD",
-            "brightRed" : "#E06C75",
-            "brightWhite" : "#e2e2e2",
-            "brightYellow" : "#333333",
-            "cyan" : "#56B6C2",
-            "foreground" : "#e2e2e2",
-            "green" : "#56e1f3",
-            "purple" : "#C678DD",
-            "red" : "#E06C75",
-            "white" : "#e2e2e2",
-            "yellow" : "#56e1f3"
-        },
-        {
-            "name" : "xcad_ps",
-            "background" : "#0f2022",
-            "black" : "#000000",
-            "blue" : "#56B6C2",
-            "brightBlack" : "#5A6374",
-            "brightBlue" : "#56B6C2",
-            "brightCyan" : "#56B6C2",
-            "brightGreen" : "#56e1f3",
-            "brightPurple" : "#C678DD",
-            "brightRed" : "#E06C75",
-            "brightWhite" : "#e2e2e2",
-            "brightYellow" : "#56B6C2",
-            "cyan" : "#56B6C2",
-            "foreground" : "#e2e2e2",
-            "green" : "#56e1f3",
-            "purple" : "#C678DD",
-            "red" : "#E06C75",
-            "white" : "#e2e2e2",
-            "yellow" : "#56e1f3"
+            */
+            "background": "#1E1E1E",
+            "black": "#000000",
+            "blue": "#007ACC",
+            "brightBlack": "#75715E",
+            "brightBlue": "#11A8CD",
+            "brightCyan": "#11A8CD",
+            "brightGreen": "#0DBC79",
+            "brightPurple": "#AE81FF",
+            "brightRed": "#DD6B65",
+            "brightWhite": "#F8F8F2",
+            "brightYellow": "#E6DB74",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#11A8CD",
+            "foreground": "#D4D4D4",
+            "green": "#0DBC79",
+            "name": "xcad_vscode",
+            "purple": "#BC3FBC",
+            "red": "#F4423A",
+            "selectionBackground": "#FFFFFF",
+            "white": "#F8F8F2",
+            "yellow": "#E5E510"
         }
     ],
-
-    // Add any keybinding overrides to this array.
-    // To unbind a default keybinding, set the command to "unbound"
-    "keybindings": []
+    "showTabsInTitlebar": true
 }
