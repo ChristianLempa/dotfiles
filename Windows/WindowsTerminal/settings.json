@@ -4,54 +4,40 @@ Windows Terminal Settings JSON File
 
 Feel free to use and modify any of my settings ;)
 
+NOTE:   To modify any Icons, upload them in your personal folder and change the links
+        in the profile sections
+
 */
 
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-
     "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
 
     "keybindings": [],
 
-    /* 
-    Profile Section
-    ---
-
-    */
     "profiles": 
     {
         "defaults": 
         {
-            // Background Settings
             "acrylicOpacity": 0.7,
             "useAcrylic": false,
             "background": "#090909",
 
-            // Default Color Scheme
             "colorScheme": "xcad_vscode",
 
-            // Font Settings
             "fontFace": "FiraCode Nerd Font Retina",
             "fontSize": 14,
 
-            // Reduce Default Padding
             "padding": "2, 2, 2, 2",
 
-            // Turn on/off Retro effect
             "experimental.retroTerminalEffect": false,
             
-            // Hide Scrollbars
             "scrollbarState": "hidden"
         },
 
         "list": 
         [
             {
-                /*  
-                Ubuntu Profile
-                ---
-
-                */
                 "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
                 "hidden": false,
                 "icon": "%userprofile%\\WindowsTerminalIcons\\ubuntu.png",
@@ -59,11 +45,6 @@ Feel free to use and modify any of my settings ;)
                 "source": "Windows.Terminal.Wsl",
                 "startingDirectory": "//wsl$/Ubuntu-20.04/home/xcad"
             },
-                /*  
-                PowerShell Profile
-                ---
-
-                */
             {
                 "commandline": "powershell.exe",
                 "colorScheme": "xcad_vscode",
@@ -73,11 +54,6 @@ Feel free to use and modify any of my settings ;)
                 "name": "PowerShell"
             },
             {
-                /*  
-                Legacy Commandline Profile
-                ---
-
-                */
                 "colorScheme": "xcad_vscode",
                 "commandline": "cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
@@ -86,11 +62,6 @@ Feel free to use and modify any of my settings ;)
                 "name": "Commandline"
             },
             {
-                /*  
-                Azure Cloud Shell Profile
-                ---
-
-                */
                 "colorScheme": "xcad_vscode",
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
@@ -99,11 +70,6 @@ Feel free to use and modify any of my settings ;)
                 "source": "Windows.Terminal.Azure"
             },
             {
-                /*  
-                Kali Linux Profile
-                ---
-
-                */
                 "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
                 "hidden": false,
                 "icon": "%userprofile%\\WindowsTerminalIcons\\kali.png",
@@ -114,22 +80,9 @@ Feel free to use and modify any of my settings ;)
         ]
     },
 
-
-    /*
-    Color Scheme Section
-    ---
-
-    */
     "schemes": 
     [
         {
-            /* 
-            THEME: xcad vscode
-            ---
-            This is my default color scheme, looks similar to the
-            default terminal colors in VSCode
-
-            */
             "background": "#1E1E1E",
             "black": "#000000",
             "blue": "#007ACC",
