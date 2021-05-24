@@ -83,6 +83,29 @@ NOTE:   To modify any Icons, upload them in your personal folder and change the 
     "schemes": 
     [
         {
+            "background": "#111927",
+            "black": "#000000",
+            "blue": "#004CFF",
+            "brightBlack": "#666666",
+            "brightBlue": "#5CB2FF",
+            "brightCyan": "#5CECC6",
+            "brightGreen": "#C5F467",
+            "brightPurple": "#AE81FF",
+            "brightRed": "#FF8484",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFCC5C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#2EE7B6",
+            "foreground": "#D4D4D4",
+            "green": "#9FEF00",
+            "name": "xcad_hackthebox",
+            "purple": "#BC3FBC",
+            "red": "#FF3E3E",
+            "selectionBackground": "#FFFFFF",
+            "white": "#FFFFFF",
+            "yellow": "#FFAF00"
+        },
+        {
             "background": "#1E1E1E",
             "black": "#000000",
             "blue": "#007ACC",
