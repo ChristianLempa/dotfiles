@@ -24,4 +24,4 @@ fix_wsl2_interop() {
 }
 
 # ALIASES
-[[ ! -f /bin/exax ]] && echo "Warning: exa is not installed" || alias ls="exa --icons --group-directories-first" 
+[[ ! -f /bin/exa ]] && echo "Warning: exa is not installed" || alias ls="exa --icons --group-directories-first" 
