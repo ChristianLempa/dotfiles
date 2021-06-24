@@ -9,6 +9,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # EXPORT BIN PATH
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.cargo/bin
 
 # VAGRANT CONFIGURATION
 export VAGRANT_DEFAULT_PROVIDER="hyperv"
@@ -23,5 +24,5 @@ fix_wsl2_interop() {
     done
 }
 
-# ALIASES
+# ALIAS COMMANDS
 [[ ! -f /bin/exa ]] && echo "Warning: exa is not installed" || alias ls="exa --icons --group-directories-first" 
