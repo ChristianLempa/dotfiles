@@ -3,13 +3,21 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
+# Change the default prompt format
 format = """\
 [╭╴](238)$env_var\
 $all[╰─](238)$character"""
 
+# Change the default prompt characters
 [character]
 success_symbol = "[](238)"
 error_symbol = "[](238)"
+
+# Shows an icon that should be included by zshrc script based on the distribution or os
+[env_var.STARSHIP_DISTRO]
+format = '[$env_value](bold white) '
+variable = "STARSHIP_DISTRO"
+disabled = false
 
 [directory]
 truncation_length = 3
@@ -41,7 +49,6 @@ staged = '[++\($count\)](green)'
 renamed = "襁 "
 deleted = " "
 
-
 [terraform]
 format = "via [ terraform $version]($style) 壟 [$workspace]($style) "
 
@@ -70,9 +77,3 @@ disabled = false
 [kubernetes.context_aliases]
 "clcreative-k8s-staging" = "cl-k8s-staging"
 "clcreative-k8s-production" = "cl-k8s-prod"
-
-
-[env_var.STARSHIP_DISTRO]
-format = '[$env_value](bold white) '
-variable = "STARSHIP_DISTRO"
-disabled = false

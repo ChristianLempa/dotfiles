@@ -1,12 +1,4 @@
-# Load ZSH Plugins
-# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# EXPORT BIN PATH
-# export PATH=$PATH:$HOME/.local/bin
-# export PATH=$PATH:$HOME/.cargo/bin
-# 
-# NODEJS
-export NVM_DIR="$HOME/.nvm"
+# NVM lazy load
 if [ -s "$HOME/.nvm/nvm.sh" ]; then
   [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
   alias nvm='unalias nvm node npm && . "$NVM_DIR"/nvm.sh && nvm'
@@ -14,23 +6,38 @@ if [ -s "$HOME/.nvm/nvm.sh" ]; then
   alias npm='unalias nvm node npm && . "$NVM_DIR"/nvm.sh && npm'
 fi
 
-# 
-# # VAGRANT CONFIGURATION
-export VAGRANT_DEFAULT_PROVIDER="hyperv"
-export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+# Fix Interop Error that randomly occurs in vscode terminal when using WSL2
+fix_wsl2_interop() {
+    for i in $(pstree -np -s $$ | grep -o -E '[0-9]+'); do
+        if [[ -e "/run/WSL/${i}_interop" ]]; then
+            export WSL_INTEROP=/run/WSL/${i}_interop
+        fi
+    done
+}
 
-# FIX WSL2 INTEROP
-# fix_wsl2_interop() {
-#     for i in $(pstree -np -s $$ | grep -o -E '[0-9]+'); do
-#         if [[ -e "/run/WSL/${i}_interop" ]]; then
-#             export WSL_INTEROP=/run/WSL/${i}_interop
-#         fi
-#     done
-# }
+# Kubectl Functions
+# ---
+#
+alias k="kubectl"
+alias h="helm"
 
-# 
-function colormap() {
-  for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
+kn() {
+    if [ "$1" != "" ]; then
+	kubectl config set-context --current --namespace=$1
+        echo -e "\e[1;32m⚓ Namespace set to $1\e[0m" 
+    else
+	echo -e "\e[1;31m❗Error, please provide a valid Namespace\e[0m"
+    fi
+}
+
+knd() {
+    kubectl config set-context --current --namespace=default
+    echo -e "\e[1;32m⚓ Namespace set to Default\e[0m"
+}
+
+ku() {
+    kubectl config unset current-context
+    echo -e "\e[1;32m⚓ unset kubernetes current-context\e[0m"
 }
 
 # ALIAS COMMANDS
@@ -39,10 +46,44 @@ function colormap() {
 # alias grep='grep --color'
 
 
-
 # Source goto
 #[[ -s "/usr/local/share/goto.sh" ]] && source /usr/local/share/goto.sh
 
-# source "kubectl.sh"
-# source "helm.sh"
-source "prompt.sh"
+function colormap() {
+  for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
+}
+
+# find out which distribution we are running on
+_distro=$(awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }')
+
+# set an icon based on the distro
+case $_distro in
+    *kali*)                  ICON="ﴣ";;
+    *arch*)                  ICON="";;
+    *debian*)                ICON="";;
+    *raspbian*)              ICON="";;
+    *ubuntu*)                ICON="";;
+    *elementary*)            ICON="";;
+    *fedora*)                ICON="";;
+    *coreos*)                ICON="";;
+    *gentoo*)                ICON="";;
+    *mageia*)                ICON="";;
+    *centos*)                ICON="";;
+    *opensuse*|*tumbleweed*) ICON="";;
+    *sabayon*)               ICON="";;
+    *slackware*)             ICON="";;
+    *linuxmint*)             ICON="";;
+    *alpine*)                ICON="";;
+    *aosc*)                  ICON="";;
+    *nixos*)                 ICON="";;
+    *devuan*)                ICON="";;
+    *manjaro*)               ICON="";;
+    *rhel*)                  ICON="";;
+    *)                       ICON="";;
+esac
+
+USER="$(whoami)"
+
+# Load Starship
+export STARSHIP_DISTRO="$ICON $USER"
+eval "$(starship init zsh)"
