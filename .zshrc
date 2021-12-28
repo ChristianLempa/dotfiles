@@ -1,3 +1,6 @@
+# Goto
+[[ -s "/usr/local/share/goto.sh" ]] && source /usr/local/share/goto.sh
+
 # NVM lazy load
 if [ -s "$HOME/.nvm/nvm.sh" ]; then
   [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
@@ -24,7 +27,7 @@ alias h="helm"
 kn() {
     if [ "$1" != "" ]; then
 	kubectl config set-context --current --namespace=$1
-        echo -e "\e[1;32m⚓ Namespace set to $1\e[0m" 
+        echo -e "\e[1;32m  Namespace set to $1\e[0m" 
     else
 	echo -e "\e[1;31m❗Error, please provide a valid Namespace\e[0m"
     fi
@@ -32,26 +35,24 @@ kn() {
 
 knd() {
     kubectl config set-context --current --namespace=default
-    echo -e "\e[1;32m⚓ Namespace set to Default\e[0m"
+    echo -e "\e[1;32m  Namespace set to Default\e[0m"
 }
 
 ku() {
     kubectl config unset current-context
-    echo -e "\e[1;32m⚓ unset kubernetes current-context\e[0m"
+    echo -e "\e[1;32m  unset kubernetes current-context\e[0m"
 }
 
-# ALIAS COMMANDS
-# [[ ! -f /bin/exa ]] && echo "Warning: exa is not installed" || alias ls="exa --icons --group-directories-first" 
-# [[ ! -f /usr/local/share/goto.sh ]] && echo "Warning: goto is not installed" || alias g="goto"
-# alias grep='grep --color'
-
-
-# Source goto
-#[[ -s "/usr/local/share/goto.sh" ]] && source /usr/local/share/goto.sh
-
+# Colormap
 function colormap() {
   for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 }
+
+# ALIAS COMMANDS
+alias ls="exa --icons --group-directories-first"
+alias ll="exa --icons --group-directories-first -l"
+alias g="goto"
+alias grep='grep --color'
 
 # find out which distribution we are running on
 _distro=$(awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }')
