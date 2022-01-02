@@ -26,21 +26,18 @@ alias h="helm"
 
 kn() {
     if [ "$1" != "" ]; then
-	kubectl config set-context --current --namespace=$1
-        echo -e "\e[1;32m⚓ Namespace set to $1\e[0m" 
+	    kubectl config set-context --current --namespace=$1
     else
-	echo -e "\e[1;31m❗Error, please provide a valid Namespace\e[0m"
+	    echo -e "\e[1;31m Error, please provide a valid Namespace\e[0m"
     fi
 }
 
 knd() {
     kubectl config set-context --current --namespace=default
-    echo -e "\e[1;32m⚓ Namespace set to Default\e[0m"
 }
 
 ku() {
     kubectl config unset current-context
-    echo -e "\e[1;32m⚓ unset kubernetes current-context\e[0m"
 }
 
 # Colormap
@@ -53,6 +50,9 @@ alias ls="exa --icons --group-directories-first"
 alias ll="exa --icons --group-directories-first -l"
 alias g="goto"
 alias grep='grep --color'
+
+alias cbp="code /home/xcad/obsidianvault/boilerplates"
+alias cpr="code /home/xcad/obsidianvault/projects"
 
 # find out which distribution we are running on
 _distro=$(awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }')
@@ -83,6 +83,7 @@ case $_distro in
     *)                       ICON="";;
 esac
 
-# Load Starship
 export STARSHIP_DISTRO="$ICON "
+
+# Load Starship
 eval "$(starship init zsh)"

@@ -3,11 +3,14 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
+# Change command timeout from 500 to 1000 ms
+command_timeout = 1000
+
 # Change the default prompt format
 format = """\
 [╭╴](238)$env_var\
 $all[╰─](238)$character"""
-
+# 
 # Change the default prompt characters
 [character]
 success_symbol = "[](238)"
