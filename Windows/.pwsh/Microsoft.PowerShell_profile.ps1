@@ -24,6 +24,18 @@ function goto {
     }
 }
 
+function kn {
+    param (
+        $namespace
+    )
+
+    if ($namespace -in "default","d") {
+        kubectl config set-context --current --namespace=default
+    } else {
+        kubectl config set-context --current --namespace=$namespace
+    }
+}
+
 $ENV:STARSHIP_CONFIG = "$HOME\.starship\starship.toml"
 $ENV:STARSHIP_DISTRO = "者  xcad"
 Invoke-Expression (&starship init powershell)
