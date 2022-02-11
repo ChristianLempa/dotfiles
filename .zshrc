@@ -55,9 +55,10 @@ alias cbp="code /home/xcad/obsidianvault/boilerplates"
 alias cpr="code /home/xcad/obsidianvault/projects"
 
 # find out which distribution we are running on
-_distro=$(awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }')
+_distro="$(if [ -e /etc/os-release ]; then file='/etc/os-release'; else file='/usr/lib/os-release'; fi; awk -F '=' '/^ID=/ { gsub(/"/, "", $2); print $2 }' "$file")"
 
 # set an icon based on the distro
+# make sure your font is compatible with https://github.com/lukas-w/font-logos
 case $_distro in
     *kali*)                  ICON="ﴣ";;
     *arch*)                  ICON="";;
