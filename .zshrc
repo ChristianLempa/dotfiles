@@ -55,7 +55,13 @@ alias cbp="code /home/xcad/obsidianvault/boilerplates"
 alias cpr="code /home/xcad/obsidianvault/projects"
 
 # find out which distribution we are running on
-_distro="$(if [ -e /etc/os-release ]; then file='/etc/os-release'; else file='/usr/lib/os-release'; fi; awk -F '=' '/^ID=/ { gsub(/"/, "", $2); print $2 }' "$file")"
+LFILE="/etc/*-release"
+MFILE="/System/Library/CoreServices/SystemVersion.plist"
+if [[ -f $FILE ]]; then
+  _distro=$(awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }')
+elif [[ -f $MFILE ]]; then
+  _distro="macos"
+fi
 
 # set an icon based on the distro
 # make sure your font is compatible with https://github.com/lukas-w/font-logos
@@ -81,6 +87,7 @@ case $_distro in
     *devuan*)                ICON="";;
     *manjaro*)               ICON="";;
     *rhel*)                  ICON="";;
+    *macos*)                 ICON="";;
     *)                       ICON="";;
 esac
 
