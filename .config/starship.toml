@@ -18,17 +18,22 @@ error_symbol = "[](238)"
 
 # Shows an icon that should be included by zshrc script based on the distribution or os
 [env_var.STARSHIP_DISTRO]
-format = '[$env_value](bold white) '
+format = '[$env_value](bold white)'
 variable = "STARSHIP_DISTRO"
 disabled = false
 
 # Shows the username
 [username]
-style_user = "white bold"
-style_root = "black bold"
+style_user = "bold white"
+style_root = "bold white"
 format = "[$user]($style) "
 disabled = false
 show_always = true
+
+[hostname]
+ssh_only = false
+format = "on [$hostname](bold yellow) "
+disabled = false
 
 [directory]
 truncation_length = 3
