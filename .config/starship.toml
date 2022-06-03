@@ -45,7 +45,7 @@ format = "at [$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]
 symbol = " "
-format = "on [$symbol$branch]($style) "
+format = "via [$symbol$branch]($style) "
 truncation_length = 4
 truncation_symbol = "…/"
 style = "bold green"
@@ -89,7 +89,7 @@ disabled = true
 format = "via [ $version]($style) "
 
 [kubernetes]
-format = 'on [ $context\($namespace\)](bold purple) '
+format = 'via [ $context\($namespace\)](bold purple) '
 disabled = false
 [kubernetes.context_aliases]
 "clcreative-k8s-staging" = "cl-k8s-staging"
