@@ -18,15 +18,15 @@ error_symbol = "[](238)"
 
 # Shows an icon that should be included by zshrc script based on the distribution or os
 [env_var.STARSHIP_DISTRO]
-format = '[$env_value](bold white)'
+format = '[$env_value](cyan)'
 variable = "STARSHIP_DISTRO"
 disabled = false
 
 # Shows the username
 [username]
-style_user = "bold white"
-style_root = "bold white"
-format = "[$user]($style) "
+style_user = "cyan"
+style_root = "cyan"
+format = " [$user]($style) "
 disabled = false
 show_always = true
 
