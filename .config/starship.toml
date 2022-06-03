@@ -89,8 +89,11 @@ disabled = true
 format = "via [ $version]($style) "
 
 [kubernetes]
-format = 'via [ $context\($namespace\)](bold purple) '
+format = 'via [ﴱ $context\($namespace\)](bold purple) '
 disabled = false
 [kubernetes.context_aliases]
-"clcreative-k8s-staging" = "cl-k8s-staging"
-"clcreative-k8s-production" = "cl-k8s-prod"
+"do-fra1-prod-k8s-clcreative" = " lgcy-1"
+"infra-home-kube-prod-1" = " prod-1"
+"infra-home-kube-prod-2" = " prod-2"
+"infra-cloud-kube-prod-1" = " prod-1"
+"infra-cloud-kube-test-1" = " test-1"
