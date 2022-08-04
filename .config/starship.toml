@@ -18,7 +18,7 @@ error_symbol = "[](238)"
 
 # Shows an icon that should be included by zshrc script based on the distribution or os
 [env_var.STARSHIP_DISTRO]
-format = '[$env_value](white)'
+format = '[$env_value](white) '
 variable = "STARSHIP_DISTRO"
 disabled = false
 
