@@ -1,9 +1,3 @@
-# mac OS shortcuts
-alias code="open -a 'Visual Studio Code'"
-
-# Goto
-[[ -s "/usr/local/share/goto.sh" ]] && source /usr/local/share/goto.sh
-
 # NVM lazy load
 if [ -s "$HOME/.nvm/nvm.sh" ]; then
   [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
@@ -21,11 +15,16 @@ fix_wsl2_interop() {
     done
 }
 
-# Kubectl Functions
+# Alias
 # ---
 #
 alias k="kubectl"
 alias h="helm"
+alias tf="terraform"
+alias a="ansible"
+
+# mac OS shortcuts
+alias code="open -a 'Visual Studio Code'"
 
 kn() {
     if [ "$1" != "" ]; then

@@ -36,7 +36,7 @@ format = "on [$hostname](bold yellow) "
 disabled = false
 
 [directory]
-truncation_length = 3
+truncation_length = 1
 truncation_symbol = "…/"
 home_symbol = " ~"
 read_only_style = "197"
@@ -65,21 +65,32 @@ staged = '[++\($count\)](green)'
 renamed = "襁 "
 deleted = " "
 
+[kubernetes]
+format = 'via [ﴱ $context\($namespace\)](bold purple) '
+disabled = false
+
+# (deactivated because of no space left)
+# 
 [terraform]
 format = "via [ terraform $version]($style) 壟 [$workspace]($style) "
+disabled = true
 
 [vagrant]
 format = "via [ vagrant $version]($style) "
+disabled = true
 
 [docker_context]
 format = "via [ $context](bold blue) "
+disabled = true
 
 [helm]
 format = "via [ $version](bold purple) "
+disabled = true
 
 [python]
 symbol = " "
 python_binary = "python3"
+disabled = true
 
 [nodejs]
 format = "via [ $version](bold green) "
@@ -87,13 +98,4 @@ disabled = true
 
 [ruby]
 format = "via [ $version]($style) "
-
-[kubernetes]
-format = 'via [ﴱ $context\($namespace\)](bold purple) '
-disabled = false
-[kubernetes.context_aliases]
-"do-fra1-prod-k8s-clcreative" = " lgcy-1"
-"infra-home-kube-prod-1" = " prod-1"
-"infra-home-kube-prod-2" = " prod-2"
-"infra-cloud-kube-prod-1" = " prod-1"
-"infra-cloud-kube-test-1" = " test-1"
+disabled = true
