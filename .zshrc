@@ -15,6 +15,12 @@ fix_wsl2_interop() {
     done
 }
 
+# Default Editor
+# ---
+#
+export EDITOR=hx
+export KUBE_EDITOR=hx
+
 # Alias
 # ---
 #
@@ -22,6 +28,8 @@ alias k="kubectl"
 alias h="helm"
 alias tf="terraform"
 alias a="ansible"
+alias ap="ansible-playbook"
+alias dt="datree"
 
 # mac OS shortcuts
 alias code="open -a 'Visual Studio Code'"
@@ -97,3 +105,4 @@ export STARSHIP_DISTRO="$ICON"
 
 # Load Starship
 eval "$(starship init zsh)"
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
