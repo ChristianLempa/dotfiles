@@ -1,0 +1,17 @@
+---
+name: Create SSL/TLS Certificate Extfile
+command: "echo \"subjectAltName=DNS:{{dns}}\" >> extfile.cnf"
+tags:
+  - openssl
+  - certificate
+  - ssl
+  - tls
+description: "Create SSL/TLS Certificate Extfile"
+arguments:
+  - name: dns
+    description: DNS
+    default_value: your-dns-record
+source_url: "https://github.com/christianlempa/dotfiles"
+author: Christian Lempa
+author_url: "https://github.com/christianlempa"
+shells: []
