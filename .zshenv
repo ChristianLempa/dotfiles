@@ -8,8 +8,6 @@ export NVM_DIR="$HOME/.nvm"
 export VAGRANT_DEFAULT_PROVIDER="hyperv"
 export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
 
-export ZDOTDIR=${ZDOTDIR:-~/.zsh}
-
 export EDITOR=hx
 export KUBE_EDITOR=hx
 
