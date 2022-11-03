@@ -1,0 +1,19 @@
+theme = "christian"
+
+[editor]
+line-number = "absolute"
+mouse = true
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+
+[keys.normal]
+"del" = "delete_selection"
+"C-c" = ":clipboard-yank"
+
+[editor.indent-guides]
+render = false
+character = ""
