@@ -15,14 +15,6 @@ fix_wsl2_interop() {
     done
 }
 
-# Default Editor
-# ---
-#
-export EDITOR=hx
-export KUBE_EDITOR=hx
-
-export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
-
 # Load Starship
 eval "$(starship init zsh)"
 
