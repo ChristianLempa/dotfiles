@@ -10,8 +10,8 @@ command_timeout = 1000
 # ---
 # old config ...
 # format = """\
-# [╭╴](238)$env_var\
-# $all[╰─](238)$character"""
+# [╭╴](238)$env_var \
+# $all[╰─](238)$character"""
 
 # new config
 format = """$env_var $all"""
