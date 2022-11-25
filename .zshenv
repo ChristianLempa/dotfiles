@@ -13,3 +13,5 @@ export EDITOR=hx
 export KUBE_EDITOR=hx
 
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+
