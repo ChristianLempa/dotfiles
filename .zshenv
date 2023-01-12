@@ -9,8 +9,8 @@ export NVM_DIR="$HOME/.nvm"
 export VAGRANT_DEFAULT_PROVIDER="hyperv"
 export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
 
-export EDITOR=hx
-export KUBE_EDITOR=hx
+export EDITOR=vim
+export KUBE_EDITOR=vim
 
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
