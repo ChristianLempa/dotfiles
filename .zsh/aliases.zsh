@@ -21,3 +21,6 @@ alias grep='grep --color'
 
 alias cbp="code /home/xcad/obsidianvault/boilerplates"
 alias cpr="code /home/xcad/obsidianvault/projects"
+
+# Scripts
+alias obsidian="python3 /Users/xcad/Projects/christianlempa/scripts/obsidian.py"
