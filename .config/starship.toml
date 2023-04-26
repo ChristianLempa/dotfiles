@@ -1,103 +1,124 @@
-# ~/.config/starship.toml
+format = """
+[](#3B4252)\
+$username\
+[](bg:#434C5E fg:#3B4252)\
+$directory\
+[](fg:#434C5E bg:#4C566A)\
+$git_branch\
+$git_status\
+[](fg:#4C566A bg:#86BBD8)\
+$c\
+$elixir\
+$elm\
+$golang\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+[](fg:#86BBD8 bg:#06969A)\
+$docker_context\
+[](fg:#06969A bg:#33658A)\
+$time\
+[ ](fg:#33658A)\
+"""
+command_timeout = 5000
+# Disable the blank line at the start of the prompt
+# add_newline = false
 
-add_newline = true  # Inserts a blank line between shell prompts
-command_timeout = 1000  # Change command timeout from 500 to 1000 ms
-format = """$env_var $all"""  # Add custom formatting before other stuff
-
-# Drop ugly default prompt characters
-[character]
-success_symbol = ""
-error_symbol = ""
-
-# ---
-
-# Shows an icon depending on what distro it is running on
-[env_var.STARSHIP_DISTRO]
-format = '[$env_value](bold white) '
-variable = "STARSHIP_DISTRO"
-disabled = false
-
-# Shows the current username
-[env_var.USER]
-format = '[$env_value](bold white) '
-variable = "USER"
-disabled = false
-
-# Shows an icon depending on what device it is running on
-[env_var.STARSHIP_DEVICE]
-format = 'on [$env_value](bold yellow)'
-variable = "STARSHIP_DEVICE"
-disabled = false
-
-# ---
-
-# Shows the hostname
-[hostname]
-ssh_only = false
-format = "[$hostname](bold yellow) "
-disabled = false
-
-# Shows current directory
-[directory]
-truncation_length = 1
-truncation_symbol = "…/"
-home_symbol = " ~"
-read_only_style = "197"
-read_only = "  "
-format = "at [$path]($style)[$read_only]($read_only_style) "
-
-# Shows current git branch
-[git_branch]
-symbol = " "
-format = "via [$symbol$branch]($style) "
-# truncation_length = 4
-truncation_symbol = "…/"
-style = "bold green"
-
-# Shows current git status
-[git_status]
-format = '[\($all_status$ahead_behind\)]($style) '
-style = "bold green"
-conflicted = "🏳"
-up_to_date = " "
-untracked = " "
-ahead = "⇡${count}"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-behind = "⇣${count}"
-stashed = " "
-modified = " "
-staged = '[++\($count\)](green)'
-renamed = "襁 "
-deleted = " "
-
-# Shows kubernetes context and namespace
-[kubernetes]
-format = 'via [ﴱ $context\($namespace\)](bold purple) '
-disabled = false
-
-# ---
-
-# Disable some modules that aren't needed anymore
+# You can also replace your username with a neat symbol like  to save some space
 [username]
-disabled = true
+show_always = true
+style_user = "bg:#3B4252"
+style_root = "bg:#3B4252"
+format = '[$user ]($style)'
 
-[vagrant]
-disabled = true
+[directory]
+style = "bg:#434C5E"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+# Here is how you can shorten some long paths by text replacement
+# similar to mapped_locations in Oh My Posh:
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+# Keep in mind that the order matters. For example:
+# "Important Documents" = "  "
+# will not be replaced, because "Documents" was already substituted before.
+# So either put "Important Documents" before "Documents" or use the substituted version:
+# "Important  " = "  "
+
+[c]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
 
 [docker_context]
-disabled = true
+symbol = " "
+style = "bg:#06969A"
+format = '[ $symbol $context ]($style) $path'
 
-[helm]
-disabled = true
+[elixir]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
 
-[python]
-disabled = true
+[elm]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
+
+[git_branch]
+symbol = ""
+style = "bg:#4C566A"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "bg:#4C566A"
+format = '[$all_status$ahead_behind ]($style)'
+
+[golang]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
+
+[haskell]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
+
+[java]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
+
+[julia]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
-disabled = true
+symbol = ""
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
 
-[ruby]
-disabled = true
+[nim]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
 
-[terraform]
-disabled = true
+[rust]
+symbol = ""
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#33658A"
+format = '[ $time ]($style)'
