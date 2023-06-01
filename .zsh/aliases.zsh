@@ -23,4 +23,4 @@ alias cbp="code /home/xcad/obsidianvault/boilerplates"
 alias cpr="code /home/xcad/obsidianvault/projects"
 
 # Scripts
-alias obsidian="python3 /Users/xcad/Projects/christianlempa/scripts/obsidian"
+alias repos="op run --env-file="/Users/xcad/.env" -- python3 /Users/xcad/Projects/christianlempa/scripts/repos"
