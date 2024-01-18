@@ -16,3 +16,5 @@ alias gbp="cd $HOME/Projects/christianlempa/boilerplates"
 alias ls="exa --icons --group-directories-first"
 alias ll="exa --icons --group-directories-first -l"
 alias grep='grep --color'
+
+alias prx="ssh root@prx-prod-2.home.clcreative.de"
