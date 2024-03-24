@@ -1,10 +1,7 @@
 accent: '#28b9ff' # Accent color for UI elements
-background: '#edeff1' # Terminal background color
+background: '#efefef' # Terminal background color
 details: lighter # Whether the theme is lighter or darker.
 foreground: '#a0a1a5' # The foreground color.
-background_image:
-  path: cosmic_light.jpg
-  opacity: 42
 terminal_colors: # Ansi escape colors.
   bright:
     black: '#666666'
