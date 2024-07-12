@@ -10,3 +10,9 @@ eval "$(starship init zsh)"
 
 # Load Direnv
 eval "$(direnv hook zsh)"
+
+
+# kubectl krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+PROMPT="${PROMPT}"$'\n\n'
