@@ -11,6 +11,8 @@
 # Load Direnv
 eval "$(direnv hook zsh)"
 
+# Load zoxide
+eval "$(zoxide init zsh)"
 
 # kubectl krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
