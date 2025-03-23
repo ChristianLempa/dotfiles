@@ -43,6 +43,7 @@ brew install --cask discord
 brew install --cask github
 brew install --cask grammarly-desktop
 brew install --cask google-chrome
+brew install --cask httpie
 brew install --cask markedit
 brew install --cask moom
 brew install --cask notion
