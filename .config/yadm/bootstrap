@@ -1,8 +1,11 @@
+#!/bin/sh
+
 # install essential formulae tools
 brew install ansible-lint
 brew install bat
 brew install bottom
 brew install cmatrix
+brew install direnv
 brew install docker
 brew install eza
 brew install fzf
