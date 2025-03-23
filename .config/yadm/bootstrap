@@ -41,6 +41,7 @@ brew install --cask 1password-cli
 brew install --cask detail
 brew install --cask discord
 brew install --cask github
+brew install --cask grammarly-desktop
 brew install --cask google-chrome
 brew install --cask moom
 brew install --cask notion
