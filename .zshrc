@@ -17,4 +17,3 @@ eval "$(zoxide init zsh)"
 # kubectl krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
-# PROMPT="${PROMPT}"$'\n\n'

@@ -1,0 +1,51 @@
+# install essential formulae tools
+brew install ansible-lint
+brew install bat
+brew install bottom
+brew install cmatrix
+brew install docker
+brew install eza
+brew install fzf
+brew install gh
+brew install glab
+brew install helm
+brew install httpie
+brew install hugo
+brew install influxdb-cli
+brew install iperf3
+brew install jq
+brew isntall k3sup
+brew install kubectx
+brew install kubernetes-cli
+brew install nmap
+brew install node
+brew install opentofu
+brew install packer
+brew install python@3.13
+brew install teleport
+brew install telnet
+brew install terraform
+brew install vhs
+brew install wakeonlan
+brew install wget
+brew install yadm
+brew install yamllint
+brew install yq
+brew install zoxide
+
+# install essential cask tools
+brew install --cask 1password-cli
+brew install --cask detail
+brew install --cask discord
+brew install --cask github
+brew install --cask google-chrome
+brew install --cask moom
+brew install --cask notion
+brew install --cask notion-calendar
+brew install --cask orbstack
+brew install --cask powershell
+brew install --cask raindropio
+brew install --cask remote-desktop-manager
+brew install --cask slack
+brew install --cask warp
+brew install --cask zoom
