@@ -8,6 +8,7 @@ brew install cmatrix
 brew install direnv
 brew install docker
 brew install eza
+brew install font-hack-nerd-font
 brew install fzf
 brew install gh
 brew install glab
