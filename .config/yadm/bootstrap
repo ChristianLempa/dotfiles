@@ -48,6 +48,7 @@ brew install --cask notion-calendar
 brew install --cask orbstack
 brew install --cask powershell
 brew install --cask raindropio
+brew install --cask raycast
 brew install --cask remote-desktop-manager
 brew install --cask slack
 brew install --cask warp
