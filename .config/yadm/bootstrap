@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # install essential formulae tools
+brew install ansible
 brew install ansible-lint
 brew install bat
 brew install bottom
