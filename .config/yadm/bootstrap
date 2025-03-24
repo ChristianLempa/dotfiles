@@ -47,7 +47,6 @@ brew install --cask grammarly-desktop
 brew install --cask google-chrome
 brew install --cask httpie
 brew install --cask markedit
-brew install --cask moom
 brew install --cask notion
 brew install --cask notion-calendar
 brew install --cask orbstack
