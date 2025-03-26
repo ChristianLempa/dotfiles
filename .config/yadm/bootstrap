@@ -40,6 +40,7 @@ brew install zoxide
 
 # install essential cask tools
 brew install --cask 1password-cli
+brew install --cask alt-tab
 brew install --cask commandpost
 brew install --cask detail
 brew install --cask discord
