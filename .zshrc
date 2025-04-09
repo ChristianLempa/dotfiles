@@ -17,3 +17,5 @@ eval "$(zoxide init zsh)"
 # kubectl krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
+# lm studio
+export PATH="$PATH:/Users/xcad/.lmstudio/bin"
