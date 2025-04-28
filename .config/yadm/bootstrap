@@ -57,5 +57,6 @@ brew install --cask raindropio
 brew install --cask raycast
 brew install --cask remote-desktop-manager
 brew install --cask slack
+brew install --cask spotify
 brew install --cask warp
 brew install --cask zoom
