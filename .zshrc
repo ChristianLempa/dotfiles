@@ -19,3 +19,10 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # lm studio
 export PATH="$PATH:/Users/xcad/.lmstudio/bin"
+
+# Ollama Configuration
+export OLLAMA_KEEP_ALIVE=600         # Keep models loaded for 10 minutes
+export OLLAMA_REQUEST_TIMEOUT=300    # 5 minute request timeout
+export OLLAMA_LOAD_TIMEOUT=600       # 10 minute load timeout
+export OLLAMA_HOST=127.0.0.1:11434   # Default host (optional)
+export OLLAMA_MODELS=~/.ollama/models # Model storage location (optional)
