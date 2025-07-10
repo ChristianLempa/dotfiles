@@ -8,6 +8,8 @@ brew install bottom
 brew install cmatrix
 brew install direnv
 brew install docker
+brew install duf
+brew install dust
 brew install eza
 brew install font-hack-nerd-font
 brew install fzf
@@ -19,7 +21,7 @@ brew install hugo
 brew install influxdb-cli
 brew install iperf3
 brew install jq
-brew isntall k3sup
+brew install k3sup
 brew install kubectx
 brew install kubernetes-cli
 brew install nmap
