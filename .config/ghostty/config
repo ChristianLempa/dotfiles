@@ -1,0 +1,11 @@
+window-padding-x = 8
+window-padding-y = 8
+
+font-family = FiraCode Nerd Font
+font-size = 16
+theme = dark:GitHub Dark Colorblind, light:GitHub Light Colorblind
+
+macos-icon = xray
+background-opacity = 0.95
+background-blur = true
+
