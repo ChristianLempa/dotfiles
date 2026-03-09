@@ -7,7 +7,7 @@
 [[ -f ~/.zsh/goto.zsh ]] && source ~/.zsh/goto.zsh
 
 # Load Starship
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 # Load Direnv
 eval "$(direnv hook zsh)"
@@ -20,3 +20,15 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # Go binaries
 export PATH="$HOME/go/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/xcad/.lmstudio/bin"
+# End of LM Studio CLI section
+
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+autoload -Uz compinit
+compinit
+
+# OpenClaw Completion
+source "/Users/xcad/.openclaw/completions/openclaw.zsh"

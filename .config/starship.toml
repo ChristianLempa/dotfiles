@@ -1,8 +1,11 @@
 # ~/.config/starship.toml
 
 add_newline = false
-command_timeout = 1000
-format = """$os$username$hostname$kubernetes$directory$git_branch$git_status"""
+command_timeout = 100
+format = """
+$os$username$hostname$kubernetes$directory$git_branch$git_status
+ 
+"""
 
 # Drop ugly default prompt characters
 [character]
@@ -12,7 +15,7 @@ error_symbol = ''
 # ---
 
 [os]
-format = '[$symbol](bold white) '   
+format = '[$symbol](bold white) '
 disabled = false
 
 [os.symbols]
@@ -21,7 +24,7 @@ Arch = '󰣇'
 Ubuntu = ''
 Macos = '󰀵'
 
-# ---y
+# ---
 
 # Shows the username
 [username]
@@ -48,7 +51,7 @@ format = 'at [$path]($style)[$read_only]($read_only_style) '
 
 # Shows current git branch
 [git_branch]
-symbol = ' '
+symbol = ' '
 format = 'via [$symbol$branch]($style)'
 # truncation_length = 4
 truncation_symbol = '…/'
@@ -87,7 +90,7 @@ disabled = true
 disabled = true
 
 [python]
-disabled = true
+disabled = false
 
 [nodejs]
 disabled = true
