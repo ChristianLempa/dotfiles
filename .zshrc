@@ -6,6 +6,9 @@
 [[ -f ~/.zsh/wsl2fix.zsh ]] && source ~/.zsh/wsl2fix.zsh
 [[ -f ~/.zsh/goto.zsh ]] && source ~/.zsh/goto.zsh
 
+# Auto-Complete plugin
+source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
 # Load Starship
 eval "$(starship init zsh)"
 
@@ -26,9 +29,3 @@ export PATH="$PATH:/Users/xcad/.lmstudio/bin"
 # End of LM Studio CLI section
 
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
-autoload -Uz compinit
-compinit
-
-# OpenClaw Completion
-source "/Users/xcad/.openclaw/completions/openclaw.zsh"
