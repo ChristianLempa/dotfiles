@@ -6,8 +6,9 @@
 [[ -f ~/.zsh/wsl2fix.zsh ]] && source ~/.zsh/wsl2fix.zsh
 [[ -f ~/.zsh/goto.zsh ]] && source ~/.zsh/goto.zsh
 
-# Auto-Complete plugin
+# Auto-Complete & Auto-Suggestions plugin
 source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Load Starship
 eval "$(starship init zsh)"
