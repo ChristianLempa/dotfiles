@@ -1,1 +1,3 @@
 .ssh/config
+.ansible.cfg
+.ansible/
