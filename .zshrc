@@ -30,3 +30,9 @@ export PATH="$PATH:/Users/xcad/.lmstudio/bin"
 # End of LM Studio CLI section
 
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Fixes SSH Remote issues with ghosttty
+if [[ -n "$SSH_CONNECTION" ]]; then
+    export TERM=xterm-256color
+fi
+export PATH="$(brew --prefix)/opt/curl/bin:$PATH"
