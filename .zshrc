@@ -36,3 +36,9 @@ if [[ -n "$SSH_CONNECTION" ]]; then
     export TERM=xterm-256color
 fi
 export PATH="$(brew --prefix)/opt/curl/bin:$PATH"
+
+# Added by git-ai installer on Sat May  2 11:49:19 CEST 2026
+export PATH="/Users/xcad/.git-ai/bin:$PATH"
+
+# cubic
+export PATH="/Users/xcad/.cubic/bin":$PATH

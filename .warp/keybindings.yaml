@@ -1,2 +1,4 @@
 ---
+"terminal:warpify_subshell": none
 "editor_view:add_cursor_above": alt-cmd-up
+"terminal:warpify_ssh_session": ctrl-shift-I
