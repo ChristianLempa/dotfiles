@@ -1,3 +1,5 @@
+bindkey -e
+
 [[ -f ~/.zsh/secrets.zsh ]] && source ~/.zsh/secrets.zsh
 [[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
 [[ -f ~/.zsh/functions.zsh ]] && source ~/.zsh/functions.zsh
@@ -42,3 +44,8 @@ export PATH="/Users/xcad/.git-ai/bin:$PATH"
 
 # cubic
 export PATH="/Users/xcad/.cubic/bin":$PATH
+
+export PATH="/Users/xcad/.local/share/modelcode:$PATH"
+
+# Add local user bin to PATH
+export PATH="$HOME/.local/bin:$PATH"

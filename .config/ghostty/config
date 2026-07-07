@@ -9,3 +9,7 @@ macos-icon = xray
 background-opacity = 0.95
 background-blur = true
 
+keybind = opt+left=text:\x1bb
+keybind = opt+right=text:\x1bf
+
+keybind = shift+enter=text:\x1b\r

@@ -38,7 +38,7 @@ show_always = true
 [hostname]
 ssh_only = false
 format = 'on [$hostname](bold yellow) '
-disabled = false
+disabled = true
 
 # Shows current directory
 [directory]
@@ -51,9 +51,9 @@ format = 'at [$path]($style)[$read_only]($read_only_style) '
 
 # Shows current git branch
 [git_branch]
-symbol = ' '
+symbol = ' '
 format = 'via [$symbol$branch]($style)'
-# truncation_length = 4
+#truncation_length = 3
 truncation_symbol = '…/'
 style = 'bold green'
 
@@ -72,11 +72,12 @@ modified = '[󰛿 modified=${count}](yellow) '
 staged = '[󰐗 staged=${count}](green) '
 renamed = '[󱍸 renamed=${count}](yellow) '
 deleted = '[󰍶 deleted=${count}](red) '
+disabled = true
 
 # Shows kubernetes context and namespace
 [kubernetes]
 format = 'via [󱃾 $context\($namespace\)](bold purple) '
-disabled = false
+disabled = true
 
 # ---
 
