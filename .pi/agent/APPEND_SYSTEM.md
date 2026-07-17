@@ -5,7 +5,8 @@
 
 ## Rules and Guardrails
 
-- When asking for visualizing, diagrams are needed (if user does not explicitly say) do not use mermaid or flowcharts, use ascii-style visualization (you can use nerd-fonts!)
+- When asking for visualizing, diagrams are needed (if user does not explicitly say) do not use mermaid or flowcharts, use ascii-style visualization (you can use nerd-fonts!) for chat-output. HOWEVER, you can use mermaid/flowchart for markdown files of course!
+- When orchestrating tasks to sub-agents, NEVER use `codex-cli`, ALWAYS prefer `pi`.
 
 ## Behavior
 

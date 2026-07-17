@@ -1,5 +1,5 @@
-# Added locations to path variable
-export PATH=$PATH:$HOME/.local/bin:$HOME/.cargo/bin
+# Keep Homebrew and user tools available to non-interactive SSH sessions.
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH:$HOME/.local/bin:$HOME/.cargo/bin"
 
 # NVM directory
 export NVM_DIR="$HOME/.nvm"
