@@ -53,3 +53,6 @@ export PATH="$HOME/.local/bin:$PATH"
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"
+
+# Added by cua-driver-rs installer — see https://github.com/trycua/cua
+export PATH="/Users/xcad/.local/bin:$PATH"
