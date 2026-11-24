@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+
+if [ "$#" -ne 1 ] || [ ! -d "$1/.obsidian" ]; then
+    printf 'Usage: %s /path/to/existing/ObsidianVault\n' "$0" >&2
+    exit 1
+fi
+
+source_dir=$(CDPATH= cd -- "$(dirname -- "$0")/themes/xcad2k" && pwd)
+target="$1/.obsidian/themes/xcad2k"
+mkdir -p -- "$target"
+cp -- "$source_dir/manifest.json" "$source_dir/theme.css" "$target/"

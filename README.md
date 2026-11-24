@@ -16,6 +16,17 @@ I created them as free resources to be used in your specific use cases. If you'r
 
 To display icons in terminal or applications Fonts, I'm using [Nerd-Fonts](https://www.nerdfonts.com). I'm currently using the **Hack Nerd Font Mono** in terminal applications, and **Hack Nerd Font** in applications.
 
+## xcad2k themes
+
+xcad2k combines the neutral grays and white accents of [The Digital Life VS Code theme](https://github.com/ChristianLempa/vscode-thedigitallife) with Ghostty-inspired purple, blue, and cyan syntax colors. Red, amber, and green remain distinct for terminal statuses and diagnostics. The light variant uses charcoal accents instead of white to keep controls readable.
+
+After pulling the dotfiles with yadm:
+
+- **Ghostty:** The tracked config selects `xcad2k-light` or `xcad2k-dark` based on system appearance. Reload Ghostty's config after pulling.
+- **Zed:** Open the theme selector and choose `xcad2k Light` or `xcad2k Dark`. To use both automatically, set `"theme": { "mode": "system", "light": "xcad2k Light", "dark": "xcad2k Dark" }` in your Zed settings.
+- **Obsidian:** Run `~/.config/obsidian/install-xcad2k /path/to/your/vault`, then choose `xcad2k` under **Settings > Appearance > Themes**. The single theme package supports both base color schemes. Rerun the installer after pulling theme updates.
+- **Orca:** Run `orca plugin install ~/.orca/plugins/xcad2k`. Under **Settings > Appearance**, select `xcad2k Light` and `xcad2k Dark` for the matching app and terminal modes. Leave both editor themes on **Same as app theme** to use xcad2k syntax colors. Rerun the install command after pulling plugin updates.
+
 ## Contribution
 
 If you’d like to contribute to this project, reach out to me on social media or [Discord](https://christianlempa.de/discord), or create a pull request for the necessary changes.

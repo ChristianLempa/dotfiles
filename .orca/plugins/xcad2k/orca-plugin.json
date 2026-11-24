@@ -1,0 +1,40 @@
+{
+  "manifestVersion": 2,
+  "id": "xcad2k",
+  "name": "xcad2k",
+  "version": "0.1.0",
+  "description": "Light and dark xcad2k app and terminal themes.",
+  "author": {
+    "name": "Christian Lempa"
+  },
+  "engines": {
+    "orca": ">=1.4.246"
+  },
+  "execution": "data",
+  "contributes": {
+    "themes": [
+      {
+        "id": "xcad2k-dark",
+        "title": "xcad2k Dark",
+        "path": "themes/dark.json"
+      },
+      {
+        "id": "xcad2k-light",
+        "title": "xcad2k Light",
+        "path": "themes/light.json"
+      }
+    ],
+    "terminalThemes": [
+      {
+        "id": "xcad2k-dark-terminal",
+        "title": "xcad2k Dark",
+        "path": "terminal/dark.json"
+      },
+      {
+        "id": "xcad2k-light-terminal",
+        "title": "xcad2k Light",
+        "path": "terminal/light.json"
+      }
+    ]
+  }
+}
