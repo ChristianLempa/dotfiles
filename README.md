@@ -26,6 +26,7 @@ After pulling the dotfiles with yadm:
 - **Zed:** Open the theme selector and choose `xcad2k Light` or `xcad2k Dark`. To use both automatically, set `"theme": { "mode": "system", "light": "xcad2k Light", "dark": "xcad2k Dark" }` in your Zed settings.
 - **Obsidian:** Run `~/.config/obsidian/install-xcad2k /path/to/your/vault`, then choose `xcad2k` under **Settings > Appearance > Themes**. The single theme package supports both base color schemes. Rerun the installer after pulling theme updates.
 - **Orca:** Run `orca plugin install ~/.orca/plugins/xcad2k`. Under **Settings > Appearance**, select `xcad2k Light` and `xcad2k Dark` for the matching app and terminal modes. Leave both editor themes on **Same as app theme** to use xcad2k syntax colors. Rerun the install command after pulling plugin updates.
+- **Hermes Desktop:** The native skin files are in `~/.hermes/skins/`. In the local Hermes profile's `config.yaml`, set `display.skin` to `xcad2k-dark` or `xcad2k-light`, then reopen Desktop and pick the skin under **Settings > Appearance > Theme** if it isn't already selected. This uses the same `display.skin` setting as the TUI and does not auto-switch between the two files. For a named local profile, copy the desired file to that profile's `skins/` directory first.
 
 ## Contribution
 
