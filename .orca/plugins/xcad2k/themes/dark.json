@@ -14,7 +14,7 @@
     "--secondary-foreground": "#D1D1D1",
     "--muted": "#171717",
     "--muted-foreground": "#A7A7A7",
-    "--accent": "#2F2F2F",
+    "--accent": "#424242",
     "--accent-foreground": "#D1D1D1",
     "--border": "#3C3C3C",
     "--input": "#3C3C3C",
@@ -22,7 +22,7 @@
     "--sidebar": "#171717",
     "--sidebar-foreground": "#D1D1D1",
     "--sidebar-border": "#3C3C3C",
-    "--editor-surface": "#1D1D1D"
+    "--editor-surface": "#252525"
   },
   "tokenColors": [
     {

@@ -18,20 +18,20 @@
         "border": "#3C3C3C",
         "border.focused": "#F1F1F1",
         "element.hover": "#292929",
-        "element.selected": "#2F2F2F",
+        "element.selected": "#424242",
         "ghost_element.hover": "#292929",
-        "ghost_element.selected": "#2F2F2F",
+        "ghost_element.selected": "#424242",
         "title_bar.background": "#171717",
         "status_bar.background": "#171717",
         "toolbar.background": "#1D1D1D",
         "tab_bar.background": "#171717",
-        "tab.active_background": "#1D1D1D",
+        "tab.active_background": "#252525",
         "tab.inactive_background": "#171717",
         "panel.background": "#171717",
-        "editor.background": "#1D1D1D",
+        "editor.background": "#252525",
         "editor.foreground": "#D1D1D1",
-        "editor.gutter.background": "#1D1D1D",
-        "editor.active_line.background": "#171717",
+        "editor.gutter.background": "#252525",
+        "editor.active_line.background": "#2C2C2C",
         "editor.line_number": "#A7A7A7",
         "editor.active_line_number": "#D1D1D1",
         "editor.indent_guide": "#3C3C3C",
@@ -49,7 +49,7 @@
           {
             "cursor": "#28B9FF",
             "background": "#28B9FF",
-            "selection": "#2F2F2F"
+            "selection": "#424242"
           }
         ],
         "syntax": {
