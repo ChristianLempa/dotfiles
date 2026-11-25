@@ -15,8 +15,12 @@
   --interactive-accent: #F1F1F1;
   --interactive-accent-hover: #F1F1F1;
   --text-selection: #424242;
-  --link-color: #F1F1F1;
-  --link-external-color: #F1F1F1;
+  --link-color: #8CADFF;
+  --link-color-hover: #B1C8FF;
+  --link-external-color: #8CADFF;
+  --link-external-color-hover: #B1C8FF;
+  --link-unresolved-color: #8CADFF;
+  --inline-code-color: #73D7FF;
   --code-background: #252525;
   --code-normal: #D1D1D1;
   --code-comment: #A7A7A7;
@@ -46,8 +50,12 @@
   --interactive-accent: #333333;
   --interactive-accent-hover: #333333;
   --text-selection: #D5D5D5;
-  --link-color: #333333;
-  --link-external-color: #333333;
+  --link-color: #254AB3;
+  --link-color-hover: #204099;
+  --link-external-color: #254AB3;
+  --link-external-color-hover: #204099;
+  --link-unresolved-color: #254AB3;
+  --inline-code-color: #006783;
   --code-background: #FAFAFA;
   --code-normal: #303030;
   --code-comment: #555555;
@@ -58,4 +66,10 @@
   --code-operator: #303030;
   --code-property: #254AB3;
   --code-tag: #254AB3;
+}
+
+/* Color inline code without changing plain text inside fenced code blocks. */
+.markdown-rendered :not(pre) > code,
+.markdown-source-view.mod-cm6 .cm-inline-code:not(.cm-formatting-code) {
+  color: var(--inline-code-color);
 }
