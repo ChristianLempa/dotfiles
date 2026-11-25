@@ -30,3 +30,11 @@ colors:
   completion_menu_bg: '#EFEFEF'
   completion_menu_current_bg: '#D5D5D5'
   selection_bg: '#D5D5D5'
+customCSS: |
+  :root[data-hermes-theme='xcad2k-light'] {
+    --ui-bg-chrome: #EFEFEF;
+    --ui-bg-sidebar: #E6E6E6;
+    --ui-bg-editor: #EFEFEF;
+    --ui-bg-elevated: #FAFAFA;
+    --ui-terminal-surface-background: #E6E6E6;
+  }
