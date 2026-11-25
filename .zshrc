@@ -56,3 +56,14 @@ eval "$(atuin init zsh)"
 
 # Added by cua-driver-rs installer — see https://github.com/trycua/cua
 export PATH="/Users/xcad/.local/bin:$PATH"
+
+
+# Pi Jev Auto Model Route
+export PI_JEV_AUTO=1
+
+# oMLX: CLI shim path begin
+case ":$PATH:" in
+  *":$HOME/.omlx/bin:"*) ;;
+  *) export PATH="$HOME/.omlx/bin:$PATH" ;;
+esac
+# oMLX: CLI shim path end
