@@ -4,9 +4,9 @@
   "tokens": {
     "--background": "#EFEFEF",
     "--foreground": "#303030",
-    "--card": "#E6E6E6",
+    "--card": "#FAFAFA",
     "--card-foreground": "#303030",
-    "--popover": "#E6E6E6",
+    "--popover": "#FAFAFA",
     "--popover-foreground": "#303030",
     "--primary": "#333333",
     "--primary-foreground": "#FFFFFF",

@@ -38,3 +38,6 @@ customCSS: |
     --ui-bg-elevated: #FAFAFA;
     --ui-terminal-surface-background: #E6E6E6;
   }
+  :root[data-hermes-theme='xcad2k-light'] [data-slot='code-card'] {
+    --ui-bg-editor: var(--ui-bg-elevated);
+  }

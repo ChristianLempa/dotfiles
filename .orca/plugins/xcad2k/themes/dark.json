@@ -4,9 +4,9 @@
   "tokens": {
     "--background": "#1D1D1D",
     "--foreground": "#D1D1D1",
-    "--card": "#171717",
+    "--card": "#252525",
     "--card-foreground": "#D1D1D1",
-    "--popover": "#171717",
+    "--popover": "#252525",
     "--popover-foreground": "#D1D1D1",
     "--primary": "#F1F1F1",
     "--primary-foreground": "#1D1D1D",
@@ -22,7 +22,7 @@
     "--sidebar": "#171717",
     "--sidebar-foreground": "#D1D1D1",
     "--sidebar-border": "#3C3C3C",
-    "--editor-surface": "#252525"
+    "--editor-surface": "#1D1D1D"
   },
   "tokenColors": [
     {

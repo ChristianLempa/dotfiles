@@ -2,7 +2,7 @@
   --background-primary: #1D1D1D;
   --background-primary-alt: #252525;
   --background-secondary: #171717;
-  --background-secondary-alt: #292929;
+  --background-secondary-alt: #1D1D1D;
   --background-modifier-border: #3C3C3C;
   --background-modifier-border-hover: #A7A7A7;
   --background-modifier-hover: #292929;
@@ -31,9 +31,9 @@
 
 .theme-light {
   --background-primary: #EFEFEF;
-  --background-primary-alt: #E6E6E6;
+  --background-primary-alt: #FAFAFA;
   --background-secondary: #E6E6E6;
-  --background-secondary-alt: #DADADA;
+  --background-secondary-alt: #EFEFEF;
   --background-modifier-border: #B0B0B0;
   --background-modifier-border-hover: #555555;
   --background-modifier-hover: #DADADA;
@@ -48,7 +48,7 @@
   --text-selection: #D5D5D5;
   --link-color: #333333;
   --link-external-color: #333333;
-  --code-background: #E6E6E6;
+  --code-background: #FAFAFA;
   --code-normal: #303030;
   --code-comment: #555555;
   --code-keyword: #82369E;

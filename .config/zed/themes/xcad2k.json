@@ -9,7 +9,7 @@
       "style": {
         "background": "#1D1D1D",
         "surface.background": "#171717",
-        "elevated_surface.background": "#171717",
+        "elevated_surface.background": "#252525",
         "text": "#D1D1D1",
         "text.muted": "#A7A7A7",
         "text.accent": "#F1F1F1",
@@ -108,7 +108,7 @@
       "style": {
         "background": "#EFEFEF",
         "surface.background": "#E6E6E6",
-        "elevated_surface.background": "#E6E6E6",
+        "elevated_surface.background": "#FAFAFA",
         "text": "#303030",
         "text.muted": "#555555",
         "text.accent": "#333333",
