@@ -4,7 +4,7 @@ window-save-state = always
 
 font-family = FiraCode Nerd Font
 font-size = 16
-theme = dark:One Half Dark, light:One Half Light
+theme = dark:xcad2k-dark, light:xcad2k-light
 
 macos-icon = xray
 #background-opacity = 0.95

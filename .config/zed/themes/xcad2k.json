@@ -25,17 +25,17 @@
         "status_bar.background": "#171717",
         "toolbar.background": "#1D1D1D",
         "tab_bar.background": "#171717",
-        "tab.active_background": "#252525",
+        "tab.active_background": "#1D1D1D",
         "tab.inactive_background": "#171717",
         "panel.background": "#171717",
-        "editor.background": "#252525",
+        "editor.background": "#1D1D1D",
         "editor.foreground": "#D1D1D1",
-        "editor.gutter.background": "#252525",
-        "editor.active_line.background": "#2C2C2C",
+        "editor.gutter.background": "#1D1D1D",
+        "editor.active_line.background": "#252525",
         "editor.line_number": "#A7A7A7",
         "editor.active_line_number": "#D1D1D1",
         "editor.indent_guide": "#3C3C3C",
-        "terminal.background": "#191919",
+        "terminal.background": "#171717",
         "terminal.foreground": "#F1F1F1",
         "link_text.hover": "#73D7FF",
         "error": "#FFA0AA",
@@ -47,8 +47,8 @@
         "deleted": "#FFA0AA",
         "players": [
           {
-            "cursor": "#28B9FF",
-            "background": "#28B9FF",
+            "cursor": "#F1F1F1",
+            "background": "#F1F1F1",
             "selection": "#424242"
           }
         ],
@@ -134,7 +134,7 @@
         "editor.line_number": "#555555",
         "editor.active_line_number": "#303030",
         "editor.indent_guide": "#B0B0B0",
-        "terminal.background": "#EFEFEF",
+        "terminal.background": "#E6E6E6",
         "terminal.foreground": "#333139",
         "link_text.hover": "#006783",
         "error": "#A22748",
@@ -146,8 +146,8 @@
         "deleted": "#A22748",
         "players": [
           {
-            "cursor": "#006783",
-            "background": "#006783",
+            "cursor": "#333333",
+            "background": "#333333",
             "selection": "#D5D5D5"
           }
         ],

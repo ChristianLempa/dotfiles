@@ -1,8 +1,8 @@
-background = #EFEFEF
+background = #E6E6E6
 foreground = #333139
-cursor-color = #006783
-selection-background = #DCD0F6
-selection-foreground = #333139
+cursor-color = #333333
+selection-background = #D5D5D5
+selection-foreground = #303030
 
 palette = 0=#222026
 palette = 1=#A22748

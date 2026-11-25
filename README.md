@@ -18,7 +18,7 @@ To display icons in terminal or applications Fonts, I'm using [Nerd-Fonts](https
 
 ## xcad2k themes
 
-xcad2k combines the neutral grays and white accents of [The Digital Life VS Code theme](https://github.com/ChristianLempa/vscode-thedigitallife) with Ghostty-inspired purple, blue, and cyan syntax colors. Red, amber, and green remain distinct for terminal statuses and diagnostics. The light variant uses charcoal accents instead of white to keep controls readable. In dark mode, editor and note surfaces are lighter than the terminal and sidebars.
+xcad2k combines the neutral grays and white accents of [The Digital Life VS Code theme](https://github.com/ChristianLempa/vscode-thedigitallife) with Ghostty-inspired purple, blue, and cyan syntax colors. Red, amber, and green remain distinct for terminal statuses and diagnostics. The light variant uses charcoal accents instead of white to keep controls readable. The surface grading follows The Digital Life: dark sidebars and terminal panels use `#171717`, and editor and note canvases use `#1D1D1D`. The light counterpart uses `#E6E6E6` for chrome and terminals and `#EFEFEF` for work surfaces. Cursors and UI selections stay grayscale; ANSI and syntax colors are unchanged.
 
 After pulling the dotfiles with yadm:
 

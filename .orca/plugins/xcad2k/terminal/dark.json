@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "mode": "dark",
   "terminal": {
-    "background": "#191919",
+    "background": "#171717",
     "foreground": "#F1F1F1",
-    "cursor": "#28B9FF",
-    "selectionBackground": "#393050",
+    "cursor": "#F1F1F1",
+    "selectionBackground": "#424242",
     "black": "#A09AA9",
     "red": "#FFA0AA",
     "green": "#93D6AE",
